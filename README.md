@@ -14,39 +14,6 @@ Este projeto é uma implementação simples do algoritmo DBSCAN (Density-Based S
 
 ## Estrutura do Projeto
 
-- `Point.java`: Classe que representa um ponto de dados com coordenadas (x, y).
-- `Cluster.java`: Classe que representa um cluster de pontos.
-- `DBSCAN.java`: Classe que implementa o algoritmo DBSCAN.
+
 
 ## Exemplo
-
-Dentro da classe `Main`, você pode definir seus próprios pontos de dados e parâmetros `eps` e `minPts`, como no exemplo abaixo:
-
-```java
-public static void main(String[] args) {
-    List<Point> points = new ArrayList<>();
-    // Adicione seus próprios pontos de dados aqui.
-
-    double eps = 2.0;
-    int minPts = 3;
-
-    DBSCAN dbscan = new DBSCAN(points, eps, minPts);
-    dbscan.run();
-
-    List<Cluster> clusters = dbscan.getClusters();
-    // Exiba ou processe os clusters conforme necessário.
-}
-
-Cluster ID: 0
-Pontos no cluster: 3
-Coordenadas dos pontos:
-(1.0, 1.0)
-(2.0, 2.0)
-(2.5, 3.0)
-
-Cluster ID: 1
-Pontos no cluster: 3
-Coordenadas dos pontos:
-(5.0, 5.0)
-(6.0, 6.0)
-(6.5, 7.0)
