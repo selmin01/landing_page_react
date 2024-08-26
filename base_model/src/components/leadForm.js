@@ -13,7 +13,7 @@ const LeadForm = () => {
     };
 
     return (
-        <div className="bg-white p-8 rounded shadow-lg max-w-md mx-auto mt-12">
+        <div className="bg-white p-8 rounded shadow-lg max-w-md mx-auto mt-12 mb-3">
             <h2 className="text-2xl font-bold mb-4">Entre em Contato</h2>
             <form onSubmit={handleSubmit}>
             <div className="mb-4">

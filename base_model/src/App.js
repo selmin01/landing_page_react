@@ -7,20 +7,22 @@ import Hero from './components/hero';
 import LeadForm from './components/leadForm';
 import Footer from './components/footer';
 import AboutPage from './pages/About';
-
+import HomePage from './pages/HomePage';
 
 const Home = () => (
   <>
     <Hero />
-    <LeadForm />
+    <HomePage />
+    
   </>
 );
 
 const Contact = () => (
-  <div className="container mx-auto mt-12 p-4">
-      <h1 className="text-3xl font-bold mb-4">Contato</h1>
-      <p>Informações de contato...</p>
-  </div>
+  <LeadForm />
+  // <div className="container mx-auto mt-12 p-4">
+  //     <h1 className="text-3xl font-bold mb-4">Contato</h1>
+  //     <p>Informações de contato...</p>
+  // </div>
 );
 
 function App() {
